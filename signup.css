@@ -1,0 +1,68 @@
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    width: 100%;
+}
+
+#container h3{
+    align-items: left;
+}
+
+span{
+    color: red;
+}
+
+span#color_text{
+    color: green;
+}
+
+table#sign_up_form tr{
+    text-align: left;
+}
+
+#sign_up_form tr:first-child td{
+    padding: 0px;
+}
+
+#sign_up_form td{
+    border-bottom: 1px solid gray;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 30px;
+}
+
+#sign_up_form td:first-child{
+    font-weight: bold;
+    padding-left: 10px;
+    width: 20%;
+}
+
+#sign_up_form td:nth-child(2){
+    width: 80%;
+}
+
+#user_postcode_01, #user_phone_01{
+    width: 3rem;
+    margin-right: 5px;
+}
+
+#user_postcode_02,  #user_phone_03{
+    width: 3rem;
+    margin-left: 5px;
+}
+
+#user_phone_02{
+    width: 3rem;
+    margin-right: 5px; 
+    margin-left: 5px; 
+}
+
+input{
+    margin-right: 15px;
+}
+
+#container #btn_submit{
+    text-align: center;
+}
