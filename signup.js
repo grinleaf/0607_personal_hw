@@ -76,13 +76,14 @@ function checkReg(){
     var phone_03= document.getElementById('user_phone_03').value
     var phone_check= document.getElementById('phone_check')
     var phone_regExp_3 = /^\d{3}$/
+    var phone_regExp_4 = /^\d{4}$/
     var phone_regExp_3_4 = /^\d{3,4}$/
 
-    if(phone_regExp_3.test(phone_01)&&phone_regExp_3_4.test(phone_02)&&phone_regExp_3.test(phone_03)) {
+    if(phone_regExp_3.test(phone_01)&&phone_regExp_3_4.test(phone_02)&&phone_regExp_4.test(phone_03)) {
         phone_check.innerHTML= "올바른 휴대폰번호입니다."
         phone_check.style.color= 'blue'
     }else {
-        phone_check.innerHTML= "휴대폰 번호를 다시 확인해주십시오. (3자리 - 3~4자리 - 3자리)"
+        phone_check.innerHTML= "휴대폰 번호를 다시 확인해주십시오. (3자리 - 3~4자리 - 4자리)"
         phone_check.style.color= 'red'
         able_sign_up = false
     }

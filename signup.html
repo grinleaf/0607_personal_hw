@@ -5,6 +5,8 @@
     <title>SignUp</title>
 
     <link rel="stylesheet" href="./signup.css">
+    <script src="./idcheck.js" language="javascript"></script>
+    <script src="jquery-3.6.0.min.js"></script>
     
 </head>
 <body>
@@ -23,7 +25,8 @@
                 </tr>
                 <tr>
                     <td>사용자ID<span> *</span></td>
-                    <td><input type="text" id="user_id"> <button onclick="">ID 중복확인</button></td>
+                   
+                    <td><input type="text" id="user_id"> <button onclick="idcheck()">ID 중복확인</button></td>
                 </tr>
                 <tr>
                     <td>비밀번호<span> *</span></td>
